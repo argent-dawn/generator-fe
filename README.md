@@ -14,7 +14,7 @@
 
 - 执行命令 `npm install -g yo`，在本地全局安装 yeoman
 
-- 在 gitlab 上 `clone` 项目 `http://git.weiresearch.com/base-platform/fe/dev-kits/generator-fe.git`
+- `clone` 项目至本地
 
 - 在 generator-fe 项目的根路径下执行命令 `npm link`，创建全局链接
 
