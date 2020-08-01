@@ -1,0 +1,47 @@
+.base-loading {
+    width: 100%;
+    height: 100%;
+
+    background: hsla(0,0%,100%,0.9);
+
+    &__content {
+        position: absolute;
+        z-index: 3333;
+        top: 45%;
+        left: 50%;
+
+        display: flex;
+        flex-direction: column;
+
+        transform: translateX(-50%);
+
+        color: #ff238d;
+
+        align-items: center;
+        justify-content: center;
+
+        .ignore-to-vw {
+            font-size: 14px;
+        }
+    }
+
+    .spin-icon {
+        width: 1em;
+        height: 1em;
+        margin-bottom: 8px;
+
+        animation: ani-spin 1s linear infinite;
+    }
+
+    @keyframes ani-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
